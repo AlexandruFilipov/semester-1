@@ -7,8 +7,19 @@
 
 numerator_input = input("Enter the numerator: ")
 denominator_input = input("Enter the denominator: ")
-
+result = 0
 # TODO: wrap the risky operations in a try/except block
+try:
+    numerator_input = int(numerator_input)
+    denominator_input = int(denominator_input)
+    result = numerator_input / denominator_input
+except ZeroDivisionError:
+    print("cant divide by 0")
+except ValueError:
+    print("Enter a valid number")
+
+print(result)
 # TODO: convert the values to integers and perform the division
+
 # TODO: print clear feedback when something goes wrong
 # TODO: only show the answer when the division succeeds
