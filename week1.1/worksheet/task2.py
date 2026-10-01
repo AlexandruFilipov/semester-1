@@ -8,8 +8,8 @@ name = input("What is your name? ")
 print(f"Welcome to LeedsBank's savings calculator {name}!")
 amount = 0
 # Ask the user to input an amount they want to save every month - this should be an integer.
-for i in (0,11):
-  amount = int("enter the amount of money you want to save every month"))
+
+amount = int(input("enter the amount of money you want to save every month"))
 # Validate that they have entered an integer.
 
 
@@ -22,4 +22,4 @@ print("The total amount of money you will save will be", total)
 # Calculate the total amount of money including interest (0.8% of the final annual amount) they will have saved in a year.
 total2 = total * 1.08
 # print this out in the format £X.XX (to two decimal places).
-print("The total after interest will be £",round(total2,2)
+print("The total after interest will be £",round(total2,2))
