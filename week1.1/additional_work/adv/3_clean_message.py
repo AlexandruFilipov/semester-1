@@ -9,5 +9,9 @@ raw_message = input("Type a message to tidy: ")
 
 # TODO: apply a sequence of string methods to produce a cleaned_message
 # Example methods: strip, title, replace, lower, upper
+raw_message = raw_message.lower()
+raw_message = raw_message.title()
+raw_message = raw_message.strip()
 # TODO: display the original and cleaned messages
+print(raw_message)
 # Extension: display the character counts for each version
