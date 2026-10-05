@@ -27,5 +27,5 @@ total2 = total * 1.008
 total2 = round(total2,2)
 total2 = str(total2)
 # print this out in the format £X.XX (to two decimal places).
-message = {"The total after interest will be £"+(total2)+"0"}
+message = "The total after interest will be £"+(total2)+"0"
 print(message)
