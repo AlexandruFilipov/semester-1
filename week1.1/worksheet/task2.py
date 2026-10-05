@@ -24,5 +24,8 @@ print("The total amount of money you will save will be", total)
 
 # Calculate the total amount of money including interest (0.8% of the final annual amount) they will have saved in a year.
 total2 = total * 1.008
+total2 = round(total2,2)
+total2 = str(total2)
 # print this out in the format £X.XX (to two decimal places).
-print("The total after interest will be £",round(total2,2))
+message = {"The total after interest will be £"+(total2)+"0"}
+print(message)
