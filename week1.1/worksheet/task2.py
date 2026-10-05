@@ -11,7 +11,7 @@ amount = 0
 try:
   amount = int(input("enter the amount of money you want to save every month"))
 except ValueError:
-  print("Enter a number!")
+  print("Invalid amount")
   exit()
 # Validate that they have entered an integer.
 
@@ -23,6 +23,6 @@ print("The total amount of money you will save will be", total)
 
 
 # Calculate the total amount of money including interest (0.8% of the final annual amount) they will have saved in a year.
-total2 = total * 1.08
+total2 = total * 1.008
 # print this out in the format £X.XX (to two decimal places).
 print("The total after interest will be £",round(total2,2))
