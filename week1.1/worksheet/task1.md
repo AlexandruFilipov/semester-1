@@ -11,15 +11,15 @@ You can complete this task on the worksheet pdf if you prefer.
 |     Command                 |     Explanation    |
 |-----------------------------|--------------------|
 |     pwd                     | shows the current location of the terminal |
-|     ls                      | |
-|     cd directory_name       | |
-|     cd ..                   | |
-|     cd -                    | |
-|     mkdir directory_name    | |
-|     touch filename          | |
-|     git status              | |
-|     git add -A              | |
-|     git commit -m ""        | |
-|     git push                | |
-|     git pull                | |
+|     ls                      | lists everything in new directory|
+|     cd directory_name       |move file into a named directory |
+|     cd ..                   |move file one directory level up |
+|     cd -                    | move file to the previous directory |
+|     mkdir directory_name    | makes a new empty directory|
+|     touch filename          | makes a new file|
+|     git status              | displays current state of the directory and staging area|
+|     git add -A              |stages all the changes done to the code  |
+|     git commit -m ""        | bundles chages done to the code with a message written|
+|     git push                | sends changes done to the code to the github server|
+|     git pull                | fetches and integrates changes present in the remote depositary to the local despository|
 
