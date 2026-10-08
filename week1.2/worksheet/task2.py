@@ -13,3 +13,4 @@ print(f"Minimum = "{minimum})
 print(f"Maximum = "{maximum})
 print(f"mean = "{mean})
 print(f"median = "{median})
+jjhjh
