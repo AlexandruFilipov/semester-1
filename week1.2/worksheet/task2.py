@@ -27,10 +27,7 @@ elif len(numbers) % 2 == 0:
   filler += numbers[index]
   median = filler / 2
 
-  
-  
-
-print(f"Minimum = ",{minimum})
-print(f"Maximum = ",{maximum})
-print(f"Mean = ",{mean})
-print(f"Median = ",{median})
+print(f"Minimum = ",(minimum))
+print(f"Maximum = ",(maximum))
+print(f"Mean = ",(mean))
+print(f"Median = ",(median))
