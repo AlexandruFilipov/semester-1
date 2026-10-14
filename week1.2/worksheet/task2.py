@@ -1,9 +1,10 @@
 # Worksheet 1.2: Task 2 Solution
+import sys
+
 from util import read_numbers
 numbers = read_numbers()
 if numbers == [] :
-  print("Error: no numbers provided")
-  exit()
+  sys.exit("Error: no numbers provided")
 
 print(numbers)
 minimum = min(numbers)
@@ -27,7 +28,4 @@ elif len(numbers) % 2 == 0:
   filler += numbers[index]
   median = filler / 2
 
-print(f"Minimum = ",(minimum))
-print(f"Maximum = ",(maximum))
-print(f"Mean = ",(mean))
-print(f"Median = ",(median))
+print(f"Minimum = {minimum}\nMaximum = {maximum}\nMean = {mean}\nMedian = {median}")
