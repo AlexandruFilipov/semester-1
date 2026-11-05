@@ -11,12 +11,13 @@ class Person:
     def __init__(self,name,birth):
         self.name = name 
         self.birth = birth
-            if type(self.name) != str:
-                raise TypeError("Name must be a string")
-            if self.name == "":
-                raise ValueError("Name cannot be empty")
-            if type(self.birth) != date:
-                raise TypeError("Birth must be a date object")
+            
+        if type(self.name) != str:
+            raise TypeError("Name must be a string")
+        if self.name == "":
+            raise ValueError("Name cannot be empty")
+        if type(self.birth) != date:
+            raise TypeError("Birth must be a date object")
     # birth fields (see README.md for further details)
 
     # Implement methods initials() and is_birthday() here
