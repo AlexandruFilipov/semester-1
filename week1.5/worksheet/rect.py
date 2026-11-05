@@ -10,13 +10,15 @@ class Rectangle:
         """
         # Add code here to check type and value of provided width & height,
         # raising appropriate exceptions if necessary (see README.md)
-        self.width = width
-        self.height = height
         try:
             if type(self.width) != int or type(self.height) != int:
                 raise TypeError("Width and height must be integers")
             if self.width <= 0 or self.height <= 0:
                 raise ValueError("Width and height must be positive")
+                
+        self.width = width
+        self.height = height
+        
                 
     # Implement methods is_square(), area() & perimeter() here
     def is_square(self):
