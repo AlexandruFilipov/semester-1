@@ -18,10 +18,10 @@ class Rectangle:
             raise ValueError("Cant be 0 or less")
         except TypeError:
             print("Wrong Value")
-        finally if self.width <= 0:
+        if self.width <= 0:
             raise ValueError("Cant be 0 or less")
-
-        try:
+            
+        try:    
             self.height = height
         except TypeError:
             print("Wrong Value")
@@ -29,7 +29,7 @@ class Rectangle:
             raise ValueError("Cant be 0 or less")
         except TypeError:
             print("Wrong Value")
-        finally if self.height <= 0:
+        if self.height <= 0:
             raise ValueError("Cant be 0 or less")
         
                 
