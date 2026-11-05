@@ -35,7 +35,8 @@ class Person:
     def initials(self):
         """Find the initials of a person"""
         initials = []
-        for letter in self.name.title():
+        self.name = self.name.title()
+        for letter in self.name:
             if letter.isalpha() and letter.isupper():
                 initials.append(letter)
         return "".join(initials)
