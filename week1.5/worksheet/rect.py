@@ -26,10 +26,8 @@ class Rectangle:
         
                 
     # Implement methods is_square(), area() & perimeter() here
-    def is_square(self,width,height):
-        """
-        Checks if the object is a square by checking if width and height are equal.
-        """
+    def is_square(self):
+        """Checks if the object is a square by checking if width and height are equal."""
         if self.width == self.height:
             return True 
         else:
