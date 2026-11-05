@@ -39,6 +39,7 @@ class Rectangle:
         
 
     def perimeter(self):
+         """Calculates the perimeter of the object"""
         return (self.height*2)+(self.width*2)
          
     # (See README.md for details of what they should do)
