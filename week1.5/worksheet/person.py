@@ -9,6 +9,7 @@ class Person:
 
     # Write a constructor here to create and initialize name and
     def __init__(self,name,birth):
+        """initialises attributes"""
         self.name = name 
         self.birth = birth
             
@@ -37,6 +38,6 @@ class Person:
         for letter in self.name:
             if letter.isalpha and letter.isupper():
                 initials.append(letter)
-        return initials
+        return "".join(initials)
 
     
