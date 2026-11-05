@@ -9,7 +9,7 @@ class Person:
 
     # Write a constructor here to create and initialize name and
     def __init__(self,name,birth):
-        """initialises attributes"""
+        """this init method iniialises the attributes of objects"""
         self.name = name 
         self.birth = birth
             
