@@ -11,7 +11,6 @@ class Person:
     def __init__(self,name,birth):
         self.name = name 
         self.birth = birth
-        try:
             if type(self.name) != str:
                 raise TypeError("Name must be a string")
             if self.name == "":
