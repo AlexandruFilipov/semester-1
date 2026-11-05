@@ -11,10 +11,25 @@ class Person:
     def __init__(self,name,birth):
         self.name = name 
         self.birth = birth
+        try:
+            if type(self.name) != str:
+                raise TypeError("Name must be a string")
+            if self.name == []:
+                raise ValueError("Name cannot be empty")
+            if type(self.birth) != date:
+                raise TypeError("Birth must be a date object")
     # birth fields (see README.md for further details)
 
     # Implement methods initials() and is_birthday() here
     # (see README.md for further details)
+    def is_birthday():
+        today = date.today()
+        if today.month == self.birth.month and today.day == self.birth.day:
+            return True
+        else:
+            return False
+
+
     def initials():
         initials = []
         for letter in name:
