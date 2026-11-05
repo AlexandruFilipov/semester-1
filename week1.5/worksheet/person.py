@@ -23,6 +23,7 @@ class Person:
     # Implement methods initials() and is_birthday() here
     # (see README.md for further details)
     def is_birthday(self):
+        """Checks if its the persons birthday"""
         today = date.today()
         if today.month == self.birth.month and today.day == self.birth.day:
             return True
@@ -31,6 +32,7 @@ class Person:
 
 
     def initials(self):
+        """Find the initials of a person"""
         initials = []
         for letter in self.name:
             if letter.isalpha and letter.isupper():
