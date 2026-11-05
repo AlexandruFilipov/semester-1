@@ -34,6 +34,7 @@ class Rectangle:
             return False
 
     def area(self):
+        """Calculates the area of the object"""
         return self.height*self.width
         
 
