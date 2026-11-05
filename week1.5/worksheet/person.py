@@ -14,7 +14,7 @@ class Person:
         try:
             if type(self.name) != str:
                 raise TypeError("Name must be a string")
-            if self.name == []:
+            if self.name == "":
                 raise ValueError("Name cannot be empty")
             if type(self.birth) != date:
                 raise TypeError("Birth must be a date object")
@@ -22,7 +22,7 @@ class Person:
 
     # Implement methods initials() and is_birthday() here
     # (see README.md for further details)
-    def is_birthday():
+    def is_birthday(self):
         today = date.today()
         if today.month == self.birth.month and today.day == self.birth.day:
             return True
@@ -30,11 +30,11 @@ class Person:
             return False
 
 
-    def initials():
+    def initials(self):
         initials = []
-        for letter in name:
-            if letter == letter.upper():
+        for letter in self.name:
+            if letter.isalpha and letter.isupper():
                 initials.append(letter)
-        print(initials)
+        return initials
 
     
